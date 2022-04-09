@@ -1,3 +1,24 @@
 .text-green{
   color: greenyellow;
 }
+.padding-5{
+  padding: 50px;
+}
+.outline-danger{
+  border-radius: 10%;
+  border-color: rgb(255, 78, 78);
+  border-style: groove;
+  border-spacing: 10px;
+}
+.color-back{
+  /* animation: mainevent 5s linear infinite; */
+  background: repeating-linear-gradient(45deg, #ccffff, #ffcccc);
+}
+@keyframes mainevent {
+  from {
+    background: repeating-linear-gradient(45deg, #ccffff, #ffcccc);
+  }
+  to {
+    background: repeating-linear-gradient(135deg, #ffcccc, #ccffff);
+  }
+}

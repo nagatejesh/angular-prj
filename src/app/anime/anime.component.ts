@@ -9,9 +9,9 @@ import { Anime } from "../anime.model";
 
 export class AnimeComponent{
   animes:Anime[]=[
-    {name:'Naruto',seasons:2,episodes:10,watched:true},
-    {name:'Attack on Titan',seasons:2,episodes:10,watched:false},
-    {name:'Wu Shen Zhu Zai',seasons:2,episodes:10,watched:false},
-    {name:'Doupo Congqing',seasons:2,episodes:10,watched:true}
+    new Anime('Naruto',2,10,true),
+    new Anime('Attack on Titan',2,10,false),
+    new Anime('Wu Shen Zhu Zai',2,10,false),
+    new Anime('Doupo Congqing',2,10,true)
   ]
 }

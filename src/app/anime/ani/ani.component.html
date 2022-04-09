@@ -1,10 +1,8 @@
-<div class="col-lg-4">
+<div class="col-lg-4 outline-danger padding-5 color-back">
   <h5>{{anime.name}}</h5>
   <div class="row">
     <p class="col-xs-5">Seasons {{anime.seasons}}</p>
     <p class="col-xs-5">Episodes {{anime.episodes}}</p>
-  </div>
-  <div class="row">
     <p class="pull-right" *ngIf="anime.watched">
       <span class="glyphicon glyphicon-ok"></span>
     </p>
