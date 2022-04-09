@@ -1,0 +1,12 @@
+<div class="col-lg-4">
+  <h5>{{anime.name}}</h5>
+  <div class="row">
+    <p class="col-xs-5">Seasons {{anime.seasons}}</p>
+    <p class="col-xs-5">Episodes {{anime.episodes}}</p>
+  </div>
+  <div class="row">
+    <p class="pull-right" *ngIf="anime.watched">
+      <span class="glyphicon glyphicon-ok"></span>
+    </p>
+  </div>
+</div>

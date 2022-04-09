@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { Routes, RouterModule } from '@angular/router';
 import {HeaderComponent} from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +11,7 @@ import { HelpComponent } from './help/help.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AniComponent } from './anime/ani/ani.component';
 
 
 const approutes:Routes=[
@@ -25,7 +25,7 @@ const approutes:Routes=[
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     RouterModule.forRoot(approutes) ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, HomeComponent,AnimeComponent, HelpComponent, AboutComponent, LoginComponent, SignupComponent ],
+  declarations: [ AppComponent, AniComponent, HeaderComponent, HomeComponent,AnimeComponent, HelpComponent, AboutComponent, LoginComponent, SignupComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
