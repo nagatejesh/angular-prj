@@ -9,7 +9,8 @@ export class AnimeService{
     new Anime('Naruto',2,10,true),
     new Anime('Attack on Titan',2,10,false),
     new Anime('Wu Shen Zhu Zai',2,10,false),
-    new Anime('Doupo Congqing',2,10,true)
+    new Anime('Doupo Congqing',2,10,true),
+    new Anime('Douluo Dalu',2,10,true)
   ]
 
   getAllAnime():Anime[]{
