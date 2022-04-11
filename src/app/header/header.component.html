@@ -5,13 +5,20 @@
   </div>
   <ul class="nav navbar-nav">
     <li routerLinkActive='active' [routerLinkActiveOptions]='{exact:true}'><a routerLink='/'>Home</a></li>
-    <li routerLinkActive='active'><a routerLink='anime'>Anime</a></li>
-    <li routerLinkActive='active'><a routerLink='about'>About</a></li>
-    <li routerLinkActive='active'><a routerLink='help'>Help</a></li>
+    <li routerLinkActive='active'><a routerLink='/anime'>Anime</a></li>
+    <li routerLinkActive='active' appopen><a class="dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">About <span class="caret"></span></a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a [routerLink]="['/about']" [fragment]="'what-is-lorem-ipsum'">What?</a></li>
+        <li><a [routerLink]="['/about']" [fragment]="'where-do-we-use-it'">Use</a></li>
+        <li><a [routerLink]="['/about']" [fragment]="'where-does-it-come-from'">From</a></li>
+        <li><a [routerLink]="['/about']" [fragment]="'where-can-i-get-some'">Get</a></li>
+      </ul>
+    </li>
+    <li routerLinkActive='active'><a [routerLink]="['/help']">Help</a></li>
   </ul>
   <ul class="nav navbar-nav navbar-right">
-    <li routerLinkActive='active'><a routerLink='signup'><span class="material-icons-outlined">account-circle</span> Sign Up</a></li>
-    <li routerLinkActive='active'><a routerLink='login'><span class="material-icons">login</span> Login</a></li>
+    <li routerLinkActive='active'><a routerLink='/signup'><span class="material-icons-outlined">account-circle</span> Sign Up</a></li>
+    <li routerLinkActive='active'><a routerLink='/login'><span class="material-icons">login</span> Login</a></li>
   </ul>
 </div>
 </nav>

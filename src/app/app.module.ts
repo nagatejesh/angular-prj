@@ -12,20 +12,24 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AniComponent } from './anime/ani/ani.component';
+import { ErrorComponent } from './error.component';
+import { OpenDirective } from './open.directive';
 
 
 const approutes:Routes=[
   {path:'',component:HomeComponent},
   {path:'anime', component:AnimeComponent},
+  {path:'anime/:index', component:AniComponent},
   {path:'about', component:AboutComponent},
   {path:'help', component:HelpComponent},
   {path:'login', component:LoginComponent},
-  {path:'signup', component:SignupComponent}
+  {path:'signup', component:SignupComponent},
+  {path:'**', component:ErrorComponent}
 ]
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     RouterModule.forRoot(approutes) ],
-  declarations: [ AppComponent, AniComponent, HeaderComponent, HomeComponent,AnimeComponent, HelpComponent, AboutComponent, LoginComponent, SignupComponent ],
+  declarations: [ AppComponent, AniComponent, HeaderComponent, HomeComponent,AnimeComponent, HelpComponent, AboutComponent, LoginComponent, SignupComponent, ErrorComponent, OpenDirective ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

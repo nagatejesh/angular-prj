@@ -1,5 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
 import { Anime } from "../anime.model";
+import { AnimeService } from "../anime.service";
 
 
 @Component({
@@ -7,11 +9,15 @@ import { Anime } from "../anime.model";
   templateUrl:'./anime.component.html'
 })
 
-export class AnimeComponent{
-  animes:Anime[]=[
-    new Anime('Naruto',2,10,true),
-    new Anime('Attack on Titan',2,10,false),
-    new Anime('Wu Shen Zhu Zai',2,10,false),
-    new Anime('Doupo Congqing',2,10,true)
-  ]
+export class AnimeComponent implements OnInit{
+  animes:Anime[]=[]
+  constructor(private animeService:AnimeService,
+      private route:Router,
+      private activeRoute:ActivatedRoute){}
+  gotoAnime(index){
+    this.route.navigate([''+index],{relativeTo:this.activeRoute})
+  }
+  ngOnInit(){
+    this.animes = this.animeService.getAllAnime();
+  }
 }
