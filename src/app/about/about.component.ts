@@ -12,11 +12,10 @@ export class AboutComponent implements OnInit{
   
   ngOnInit(){
     var frag = this.route.snapshot.fragment
-    // window.location.hash=frag;
     this.vwRef.scrollToAnchor(frag)
     this.route.fragment.subscribe(
       (fragment:string)=>{
-        window.location.hash=fragment;
+        this.vwRef.scrollToAnchor(fragment)
       }
     )
   }
