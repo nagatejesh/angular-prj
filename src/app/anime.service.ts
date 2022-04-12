@@ -17,9 +17,9 @@ export class AnimeService{
     return this.animes.slice();
   }
 
-  getAnimeByIndex(index:number):Anime{
+  getAnimeByIndex(index:number):Anime|undefined{
     if(index>this.animes.length)
-      return null;
+      return ;
     return this.animes[index];
   }
   

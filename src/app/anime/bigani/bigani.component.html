@@ -1,0 +1,10 @@
+<div class="col-lg-6 padding-5 pull-right">
+  <h3 class="text-primary">{{anime.name}}</h3>
+  <div class="col-lg-9">
+    <p class="col-lg-6">Seasons {{anime.seasons}}</p>
+    <p class="col-lg-6">Episodes {{anime.episodes}}</p>
+    <p class="pull-right col-lg-6" *ngIf="anime.watched">
+      <span class="material-icons">verified</span>
+    </p>
+  </div>
+</div>

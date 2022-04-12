@@ -1,3 +1,7 @@
-<div class="row justify-content-center">
+
+<div class="row">
+<div class="row col-lg-6">
   <app-ani *ngFor="let anime of animes; index as i" [anime]='anime' (click)="gotoAnime(i)"></app-ani>
+</div>
+<router-outlet></router-outlet>
 </div>

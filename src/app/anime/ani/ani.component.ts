@@ -15,21 +15,5 @@ export class AniComponent implements OnInit{
       private route:Router,
       private activeRoute:ActivatedRoute){}
 
-  ngOnInit(){
-    if(!this.anime){
-      var i= +this.activeRoute.snapshot.params['index'];
-      this.anime =this.animeServive.getAnimeByIndex(i);
-      if(!this.anime)
-        this.route.navigate(['/notfound']);
-      }
-    //   this.activeRoute.params.subscribe(
-    //     (param:Params)=>{
-    //       var i= +param['index'];
-    //       this.anime =this.animeServive.getAnimeByIndex(i);
-    //       if(!this.anime)
-    //         this.route.navigate(['/notfound']);
-    //   }
-    // )
-  }
-
+  ngOnInit(){}
 }

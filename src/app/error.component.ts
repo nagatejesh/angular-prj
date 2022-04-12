@@ -3,6 +3,6 @@ import { Component } from "@angular/core";
 
 @Component({
   selector:'app-error',
-  template:`Oops!! Not found`
+  template:`<h1 class="text-center text-muted">Oops!! Not found</h1>`
 })
 export class ErrorComponent{}
