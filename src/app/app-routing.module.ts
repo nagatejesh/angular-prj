@@ -7,14 +7,17 @@ import { BiganiComponent } from './anime/bigani/bigani.component';
 import { ErrorComponent } from './error.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
+import { LyricsComponent } from './home/lyrics/lyrics.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
 const approutes: Routes = [
-  { path: '', component: HomeComponent },
   {
-    path: 'anime',
-    component: AnimeComponent,
+    path: 'home', component: HomeComponent,
+    children: [{ path: ':song', component: LyricsComponent }],
+  },
+  {
+    path: 'anime', component: AnimeComponent,
     children: [{ path: ':index', component: BiganiComponent }],
   },
   { path: 'about', component: AboutComponent },
@@ -22,10 +25,11 @@ const approutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'notfound', component: ErrorComponent },
+  { path: '', redirectTo: 'home' ,pathMatch:'full' },
   { path: '**', redirectTo: 'notfound' },
 ];
 @NgModule({
-  imports:[RouterModule.forRoot(approutes)],
-  exports:[RouterModule]
+  imports: [RouterModule.forRoot(approutes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

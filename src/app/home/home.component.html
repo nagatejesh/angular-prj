@@ -1,3 +1,12 @@
-<h1 class="text-warning">
-  This is a home component!!
-</h1>
+<div class="container">
+  <div class="col-lg-6">
+    <div class="list-group">
+      <p class="list-group-item link" *ngFor="let song in songs" [routerLink]="['/',song]">
+        {{song}}
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>

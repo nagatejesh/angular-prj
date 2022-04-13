@@ -15,6 +15,7 @@ import { ErrorComponent } from './error.component';
 import { OpenDirective } from './open.directive';
 import { BiganiComponent } from './anime/bigani/bigani.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LyricsComponent } from './home/lyrics/lyrics.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -23,6 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent, AnimeComponent, HelpComponent,
     AboutComponent, LoginComponent, SignupComponent,
     ErrorComponent, OpenDirective, BiganiComponent,
+    LyricsComponent
   ],
   bootstrap: [AppComponent],
 })
