@@ -1,12 +1,15 @@
 <div class="lyric-container">
-  <h3 class="text-primary row">
-    {{lyrics.title}} <span class="text-muted text-center">by</span><p class="text-muted" *ngFor="let singer of lyrics.singers">{{singer}}</p>
-  </h3>
+  <div class="row">
+    <h3 class="text-primary">
+      {{lyrics.title}} 
+    </h3>
+      <span class="text-muted text-center">by</span><p class="text-muted" *ngFor="let singer of lyrics.singers">{{singer}}</p>
+  </div>
   <div>
     <table>
       <tr *ngFor="let ly of lyrics.lyrics">
-        <td>{{ly.type}}</td>
-        <td>{{ly.part}}</td>
+        <td class="text-bold">{{ly.type}}</td>
+        <td innerHTML='{{ly.part}}'></td>
       </tr>
     </table>
   </div>

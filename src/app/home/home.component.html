@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container-fluid">
   <div class="col-lg-6">
     <div class="list-group">
-      <p class="list-group-item link" *ngFor="let song in songs" [routerLink]="['/',song]">
+      <p class="list-group-item link" *ngFor="let song of songs" [routerLink]="[song]">
         {{song}}
       </p>
     </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 fixed-height">
     <router-outlet></router-outlet>
   </div>
 </div>

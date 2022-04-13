@@ -12,6 +12,10 @@
   }
   .lyric-container{
     overflow-y: scroll;
+    padding-left: 2rem;
+  }
+  .fixed-height{
+    max-height: 80vh;
   }
   .text-green{
     color: greenyellow;

@@ -1,62 +1,66 @@
+import { Injectable } from "@angular/core";
 import { Lyrics } from "./lyrics.model";
 
+@Injectable({
+  providedIn:'root'
+})
 export class LyricsService{
 
   lyricsList:Lyrics[]=[
     {title:'Darshana',singers:['Hesham Abdul Wahab','Darshana Rajendran'],
         lyrics:[
-          {type:'Male',part:`Ninne Njaan..
-          Kandenne..
-          Megham Pookkal Peyyunne..
-          Onnaavaan Njanenne..
-          Nenjil Theerthoren..
-          Pranaya Prapanchamitha..
-
-          Darshana
-          Sarvam Sada Nin Sourabhyam
-          Darshana
-          En Jeevan Saayoojyam
-          Darshana
-          Snehaamrutham Ennileku, Darshana..
-
-          Nee Pokum Vazhiyil
-          Varam Kaathu Ninnu
-          Oru Nokku Nalkaathakannu Nee
-
-          Orkkunna Neram
-          Kanalaanu Nenjil
-          Maruvaakku Chollaathathenthe..
-
-          Ethorazhathil
-          Moodi Vachaalum Azhake
-          Manasu Thediyethunnu
-          Ninte Ee Punchiri
-          Neeyaam Madhuve
-          Nukaraan Kaathu Njan
-
-          Darshana
-          Sarvam Sada Nin Sourabhyam
-          Darshana
-          En Jeevan Saayoojyam
-          Darshana
-          Snehaamrutham Ennileku, Darshana..
-
-          Onnaavaan
-          Njanenne
-          Nenjil Theerthoren
-          Pranaya Prapanchamitha..
-
-          Darshana
-          Sarvam Sada Nin Sourabhyam
-          Darshana
-          En Jeevan Saayoojyam
-          Darshana
-          Snehaamrutham Ennileku, Darshana..
-
-          Darshana… Darshana
-          Darshana
-          Snehaamrutham Ennilekoo
-          Darshana..`}
+          {type:'Male',part:`Ninne Njaan..<br/>
+          Kandenne..<br/>
+          Megham Pookkal Peyyunne..<br/>
+          Onnaavaan Njanenne..<br/>
+          Nenjil Theerthoren..<br/>
+          Pranaya Prapanchamitha..<br/>
+          <br/>
+          Darshana<br/>
+          Sarvam Sada Nin Sourabhyam<br/>
+          Darshana<br/>
+          En Jeevan Saayoojyam<br/>
+          Darshana<br/>
+          Snehaamrutham Ennileku, Darshana..<br/>
+          <br/>
+          Nee Pokum Vazhiyil<br/>
+          Varam Kaathu Ninnu<br/>
+          Oru Nokku Nalkaathakannu Nee<br/>
+          <br/>
+          Orkkunna Neram<br/>
+          Kanalaanu Nenjil<br/>
+          Maruvaakku Chollaathathenthe..<br/>
+          <br/>
+          Ethorazhathil<br/>
+          Moodi Vachaalum Azhake<br/>
+          Manasu Thediyethunnu<br/>
+          Ninte Ee Punchiri<br/>
+          Neeyaam Madhuve<br/>
+          Nukaraan Kaathu Njan<br/>
+          <br/>
+          Darshana<br/>
+          Sarvam Sada Nin Sourabhyam<br/>
+          Darshana<br/>
+          En Jeevan Saayoojyam<br/>
+          Darshana<br/>
+          Snehaamrutham Ennileku, Darshana..<br/>
+          <br/>
+          Onnaavaan<br/>
+          Njanenne<br/>
+          Nenjil Theerthoren<br/>
+          Pranaya Prapanchamitha..<br/>
+          <br/>
+          Darshana<br/>
+          Sarvam Sada Nin Sourabhyam<br/>
+          Darshana<br/>
+          En Jeevan Saayoojyam<br/>
+          Darshana<br/>
+          Snehaamrutham Ennileku, Darshana..<br/>
+          <br/>
+          Darshana… Darshana<br/>
+          Darshana<br/>
+          Snehaamrutham Ennilekoo<br/>
+          Darshana..<br/>`}
         ]},
     {title:'Mudhal Nee Mudivum nee',singers:['Sid Sriram','Darbuka Siva'],
         lyrics:[
@@ -140,7 +144,7 @@ export class LyricsService{
 
 
   getSongs(){
-    var songs:string[]
+    var songs:string[]=[];
     this.lyricsList.forEach((song)=>{
       songs.push(song.title)
     });
