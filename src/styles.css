@@ -11,11 +11,11 @@
     vertical-align: middle;
   }
   .lyric-container{
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-left: 2rem;
   }
-  .fixed-height{
-    max-height: 80vh;
+  .link{
+    cursor: pointer;
   }
   .text-green{
     color: greenyellow;
