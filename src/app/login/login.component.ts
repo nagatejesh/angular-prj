@@ -1,12 +1,14 @@
 import { Component, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
 import { AuthService } from "../auth.service";
+import { CanDeactivateComponent } from "../can-deactivate-gaurd.service";
 
 @Component({
   selector:'app-login',
   templateUrl:'./login.component.html'
 })
 
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit, CanDeactivateComponent{
   isLoggedIn=false;
   constructor(private authService:AuthService){}
   ngOnInit(){
@@ -19,6 +21,11 @@ export class LoginComponent implements OnInit{
   logout(){
     this.authService.logout();
     this.isLoggedIn=false;
+  }
+  canDeactivate():Observable<boolean> | Promise<boolean> | boolean{
+
+    if(this.isLoggedIn)return true;
+    else return confirm('Do you want to leave without login? If you don\'t, then your access to the application will be limited!!')
   }
 
 }

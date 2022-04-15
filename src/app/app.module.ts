@@ -11,7 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AniComponent } from './anime/ani/ani.component';
-import { ErrorComponent } from './error.component';
+import { ErrorComponent } from './error/error.component';
 import { OpenDirective } from './open.directive';
 import { BiganiComponent } from './anime/bigani/bigani.component';
 import { AppRoutingModule } from './app-routing.module';
