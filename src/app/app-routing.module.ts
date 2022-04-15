@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AnimeComponent } from './anime/anime.component';
 import { BiganiComponent } from './anime/bigani/bigani.component';
+import { AuthGaurd } from './auth-gaurd.service';
 import { ErrorComponent } from './error.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +18,7 @@ const approutes: Routes = [
     children: [{ path: ':song', component: LyricsComponent }],
   },
   {
-    path: 'anime', component: AnimeComponent,
+    path: 'anime', canActivate:[AuthGaurd] , component: AnimeComponent,
     children: [{ path: ':index', component: BiganiComponent }],
   },
   { path: 'about', component: AboutComponent },

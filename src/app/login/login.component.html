@@ -1,3 +1,5 @@
-<h1 class="text-danger bg-dark">
-  This is login component.
-</h1>
+
+<div class="row">
+  <button class="btn btn-primary" *ngIf="!isLoggedIn" (click)="login()">Login</button>
+  <button class="btn btn-primary" *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+</div>
