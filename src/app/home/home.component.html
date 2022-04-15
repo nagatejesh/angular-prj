@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="col-lg-4">
     <div class="list-group">
-      <p class="list-group-item link" *ngFor="let song of songs" [routerLink]="[song]">
+      <p class="list-group-item link" *ngFor="let song of songs" [routerLink]="[song]" routerLinkActive = 'active'>
         {{song}}
       </p>
     </div>

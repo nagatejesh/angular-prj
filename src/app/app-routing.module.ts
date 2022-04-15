@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
+import { AnimeResolver } from './anime/anime-resolver.service';
 import { AnimeComponent } from './anime/anime.component';
 import { BiganiComponent } from './anime/bigani/bigani.component';
 import { AuthGaurd } from './auth-gaurd.service';
@@ -20,7 +21,7 @@ const approutes: Routes = [
   },
   {
     path: 'anime', canActivateChild:[AuthGaurd] , component: AnimeComponent,
-    children: [{ path: ':index', component: BiganiComponent }],
+    children: [{ path: ':index', component: BiganiComponent, resolve:{anime:AnimeResolver} }],
   },
   { path: 'about', component: AboutComponent },
   { path: 'help', component: HelpComponent },
@@ -32,6 +33,7 @@ const approutes: Routes = [
   { path: '**', redirectTo: 'notfound' },
 ];
 @NgModule({
+  // imports: [RouterModule.forRoot(approutes, {useHash:true})],
   imports: [RouterModule.forRoot(approutes)],
   exports: [RouterModule],
 })
