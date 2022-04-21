@@ -20,11 +20,19 @@ import { LyricsComponent } from './home/lyrics/lyrics.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
-    AppComponent, AniComponent, HeaderComponent,
-    HomeComponent, AnimeComponent, HelpComponent,
-    AboutComponent, LoginComponent, SignupComponent,
-    ErrorComponent, OpenDirective, BiganiComponent,
-    LyricsComponent
+    AppComponent,
+    AniComponent,
+    HeaderComponent,
+    HomeComponent,
+    AnimeComponent,
+    HelpComponent,
+    AboutComponent,
+    LoginComponent,
+    SignupComponent,
+    ErrorComponent,
+    OpenDirective,
+    BiganiComponent,
+    LyricsComponent,
   ],
   bootstrap: [AppComponent],
 })
