@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { AuthService } from "../auth.service";
 import { CanDeactivateComponent } from "../can-deactivate-gaurd.service";
+import { User } from "../user.model";
 
 @Component({
   selector:'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent implements OnInit, CanDeactivateComponent{
     this.isLoggedIn = this.authService.loggedIn;
   }
   login(){
-    this.authService.login();
+    this.authService.login(new User('','','','',''));
     this.isLoggedIn=true;
   }
   logout(){

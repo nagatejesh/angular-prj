@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 
 @Component({
@@ -6,7 +6,11 @@ import { NgForm } from "@angular/forms";
   templateUrl:'./signup.component.html'
 })
 
-export class SignupComponent{
+export class SignupComponent implements OnInit{
+
+  ngOnInit(){
+    console.log(sessionStorage)
+  }
   submitform(form:NgForm){
     console.log(form);
     
