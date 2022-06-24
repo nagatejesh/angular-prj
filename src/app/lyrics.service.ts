@@ -71,74 +71,74 @@ export class LyricsService{
           {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo
           Hooo oo hoo oo hoo oo hoo oo`},
           {type:'Male',part:`Aaa….aaa….aa….aa…`},
-          {type:'Male',part:`Mudhal nee mudivum nee
-          Moondru kaalam nee
-          Kadal nee karaiyum nee
-          Kaatru kooda nee
+          {type:'Male',part:`Mudhal nee mudivum nee<br/>
+          Moondru kaalam nee<br/>
+          Kadal nee karaiyum nee<br/>
+          Kaatru kooda nee<br/>
 
-          Manadhoram oru kaayam
-          Unnai ennadha naal illaiyae
-          Naanaga naanum illaiyae
+          Manadhoram oru kaayam<br/>
+          Unnai ennadha naal illaiyae<br/>
+          Naanaga naanum illaiyae<br/>
 
-          Vazhiyengum pala bimbam
-          Adhil naan saaya thozh illaiyae
-          Un pola yaarum illaiyae`},
-          {type:'Males',part:`Theera nadhi neethaanadi
-          Neendhaamal naan moozhgi ponen
-          Neethaanadi vaanil madhi
-          Neeyalla naan thaanae theindhen`},
-          {type:'Male',part:` Paadhi kaanagam
-          Adhil kaanamal ponavan
-          Oru paavai kaal thadam
-          Adhai thedamal theinthavan
+          Vazhiyengum pala bimbam<br/>
+          Adhil naan saaya thozh illaiyae<br/>
+          Un pola yaarum illaiyae<br/>`},
+          {type:'Males',part:`Theera nadhi neethaanadi<br/>
+          Neendhaamal naan moozhgi ponen<br/>
+          Neethaanadi vaanil madhi<br/>
+          Neeyalla naan thaanae theindhen<br/>`},
+          {type:'Male',part:` Paadhi kaanagam<br/>
+          Adhil kaanamal ponavan<br/>
+          Oru paavai kaal thadam<br/>
+          Adhai thedamal theinthavan<br/>
           
-          Kaanadha baaram en nenjilae
-          Thunai illa naan andrilae
-          Naal ellaam pogum aanalum naan`},
-          {type:'Males',part:`Uyir illadha udalae`},
-          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo
-          Hooo oo hoo oo hoo oo hoo oo`},
-          {type:'Male',part:`Aaa….aaa….aa….aa…`},
-          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo
-          Hooo oo hoo oo hoo oo hoo oo`},
-          {type:'Male',part:`Aaa….aaa….aa….aa…`},
-          {type:'Male',part:`Mudhal nee mudivum nee
-          Moondru kaalam nee
-          Kadal nee karaiyum nee
-          Kaatru kooda nee
+          Kaanadha baaram en nenjilae<br/>
+          Thunai illa naan andrilae<br/>
+          Naal ellaam pogum aanalum naan<br/>`},
+          {type:'Males',part:`Uyir illadha udalae<br/>`},
+          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo<br/>
+          Hooo oo hoo oo hoo oo hoo oo<br/>`},
+          {type:'Male',part:`Aaa….aaa….aa….aa…<br/>`},
+          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo<br/>
+          Hooo oo hoo oo hoo oo hoo oo<br/>`},
+          {type:'Male',part:`Aaa….aaa….aa….aa…<br/>`},
+          {type:'Male',part:`Mudhal nee mudivum nee<br/>
+          Moondru kaalam nee<br/>
+          Kadal nee karaiyum nee<br/>
+          Kaatru kooda nee<br/>
 
           Dhoora desathil thozhainthaayo
-          Kanmani
-          Unai thedi kandathum
-          En kannellaam minnmini
+          Kanmani<br/>
+          Unai thedi kandathum<br/>
+          En kannellaam minnmini<br/>
 
-          Pinnokki kaalam pogum enil
-          Un mannippai kooruven
-          Kannokki nerai paarkkum kanam`},
-          {type:'Males',part:`Pizhai ellaamae kalaiven`},
-          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo
-          Hooo oo hoo oo hoo oo hoo oo`},
-          {type:'Male',part:`Aaa….aaa….aa….aa…`},
-          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo
-          Hooo oo hoo oo hoo oo hoo oo`},
-          {type:'Male',part:`Aaa….aaa….aa….aa…`},
-          {type:'Male',part:`Mudhal nee mudivum nee
-          Moondru kaalam nee
-          Kadal nee karaiyum nee
-          Kaatru kooda nee
+          Pinnokki kaalam pogum enil<br/>
+          Un mannippai kooruven<br/>
+          Kannokki nerai paarkkum kanam<br/>`},
+          {type:'Males',part:`Pizhai ellaamae kalaiven<br/>`},
+          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo<br/>
+          Hooo oo hoo oo hoo oo hoo oo<br/>`},
+          {type:'Male',part:`Aaa….aaa….aa….aa…<br/>`},
+          {type:'Chorus',part:`Hooo oo hoo oo hoo oo hoo oo<br/>
+          Hooo oo hoo oo hoo oo hoo oo<br/>`},
+          {type:'Male',part:`Aaa….aaa….aa….aa…<br/>`},
+          {type:'Male',part:`Mudhal nee mudivum nee<br/>
+          Moondru kaalam nee<br/>
+          Kadal nee karaiyum nee<br/>
+          Kaatru kooda nee<br/>
 
-          Nagaradha kadigaaram
-          Adhu pol naanum nindrirundhen
-          Nee engu sendraai kannamma
-          Azhagaana aridhaaram
-          Velipaarvaikku poosi konden
-          Punnaigaikku podhum kannamma`},
-          {type:'Males',part:`Nee ketkavae en padalai
-          Un aasai raagathil seidhen
-          Un punnagai pon minnalai
-          Naan korthu aangaangu neidhen`},
-          {type:'Male',part:`Mudhal nee…eee…..
-          Mudivum nee…ee…ee…`}
+          Nagaradha kadigaaram<br/>
+          Adhu pol naanum nindrirundhen<br/>
+          Nee engu sendraai kannamma<br/>
+          Azhagaana aridhaaram<br/>
+          Velipaarvaikku poosi konden<br/>
+          Punnaigaikku podhum kannamma<br/>`},
+          {type:'Males',part:`Nee ketkavae en padalai<br/>
+          Un aasai raagathil seidhen<br/>
+          Un punnagai pon minnalai<br/>
+          Naan korthu aangaangu neidhen<br/>`},
+          {type:'Male',part:`Mudhal nee…eee…..<br/>
+          Mudivum nee…ee…ee…<br/>`}
         ]}
   ];
 

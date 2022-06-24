@@ -6,7 +6,8 @@ import { LyricsService } from "../../lyrics.service";
 
 @Component({
   selector:'app-lyrics',
-  templateUrl:'./lyrics.component.html'
+  templateUrl:'./lyrics.component.html',
+  styleUrls:['./lyrics.component.css']
 })
 
 export class LyricsComponent implements OnInit{
