@@ -1,3 +1,4 @@
-# angular-prj-anime
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-prj-anime)
+# Angular Prjoect Anime 
+## For fun - Nothing is in there
+Take a look my app 👇
+[Run on StackBlitz ⚡️](https://angular-prj-anime.stackblitz.io/)
